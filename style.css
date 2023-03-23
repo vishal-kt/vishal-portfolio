@@ -46,14 +46,12 @@ body {
     font-size: 25px;
     padding: 5px 10px;
 }
-.header ul li a :hover{
-    background-color: #ffffff;
+.header ul li a:hover{
+    
     color: #000;
 }
 
-.header h2{
-    
-}
+
 
 
 @keyframes animate{
