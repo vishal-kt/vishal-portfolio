@@ -1,6 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+/* this is preset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* this is global variables  */
+:root{
+
+    --primary-text-color:#ffffff;
+    --background-gradient:linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#1c2cc0, #FF3706);
+    --background-gradient-size:400% 400%;
+}
+
 body {
-    margin:0;
+   
+    font-family: 'PT Sans Narrow', sans-serif;
+    background: var(--background-gradient);
+    background-size: var(--background-gradient-size);
+    width: 100%;
+    height: 100vh;
+    animation: animate 15s ease infinite;
   }
+
+
+
+.header ul{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header ul li{
+    display: inline-block;
+    padding: 40px 15px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+.header ul li a :hover{
+    background-color: #ffffff;
+    color: #000;
+}
+
+.header h2{
+    
+}
+
+
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
   .wrapper {
       width: 100%;
       height: 100%;
