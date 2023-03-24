@@ -9,7 +9,8 @@
 
 /* this is global variables  */
 :root{
-
+    
+    --logo-text-color :#EEB5EB;
     --primary-text-color:#ffffff;
     --background-gradient:linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#1c2cc0, #FF3706);
     --background-gradient-size:400% 400%;
