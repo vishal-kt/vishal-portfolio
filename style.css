@@ -7,15 +7,27 @@
     box-sizing: border-box;
 }
 
+
+@font-face {
+    font-family: custom-font;
+    src: url(/fonts/angellaWhite.otf);
+    font-weight:bold;
+}
+
 /* this is global variables  */
 :root{
-    
+    --padding-inline-section:20px
     --logo-text-color :#EEB5EB;
     --primary-text-color:#ffffff;
     --background-gradient:linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#1c2cc0, #FF3706);
     --background-gradient-size:400% 400%;
 }
 
+
+.flex{
+    display: flex;
+    align-items: center;
+}
 body {
    
     font-family: 'PT Sans Narrow', sans-serif;
@@ -26,7 +38,59 @@ body {
     animation: animate 15s ease infinite;
   }
 
+.container{
+   
+    max-width: 1320px;
+    margin-inline:auto;
+    padding: var(--padding-inline-section);
 
+
+
+}
+a{
+    text-decoration: none;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.logo{
+    font-family:custom-font;
+    font-size: 60px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+.main-nav{
+    
+   justify-content: space-between;
+}
+
+.nav-links ul{
+
+    gap: 40px;
+    font-size: 30px;
+  
+
+}
+.nav-links ul a{
+    color: #fff8f8;
+    text-transform: uppercase;
+    
+}
+
+
+
+
+
+/* 
+.App-logo{
+    font-size: 25px;
+    padding: 40px 15px;
+}
 
 .header ul{
     height: 50px;
@@ -49,8 +113,9 @@ body {
 }
 .header ul li a:hover{
     
-    color: #000;
+    color: #555050;
 }
+ */
 
 
 
